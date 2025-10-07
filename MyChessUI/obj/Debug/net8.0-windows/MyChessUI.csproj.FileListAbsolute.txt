@@ -1,0 +1,48 @@
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\bin\Debug\net8.0-windows\MyChessUI.exe
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\bin\Debug\net8.0-windows\MyChessUI.deps.json
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\bin\Debug\net8.0-windows\MyChessUI.runtimeconfig.json
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\bin\Debug\net8.0-windows\MyChessUI.dll
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\bin\Debug\net8.0-windows\MyChessUI.pdb
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\bin\Debug\net8.0-windows\MyChessLogic.dll
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\bin\Debug\net8.0-windows\MyChessLogic.pdb
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.csproj.AssemblyReference.cache
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI_MarkupCompile.cache
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI_MarkupCompile.lref
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.g.resources
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.AssemblyInfoInputs.cache
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.AssemblyInfo.cs
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.csproj.CoreCompileInputs.cache
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.csproj.Up2Date
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.dll
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\refint\MyChessUI.dll
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.pdb
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.genruntimeconfig.cache
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\ref\MyChessUI.dll
+C:\Users\manue\Desktop\MyChess\MyChessUI\bin\Debug\net8.0-windows\MyChessUI.exe
+C:\Users\manue\Desktop\MyChess\MyChessUI\bin\Debug\net8.0-windows\MyChessUI.deps.json
+C:\Users\manue\Desktop\MyChess\MyChessUI\bin\Debug\net8.0-windows\MyChessUI.runtimeconfig.json
+C:\Users\manue\Desktop\MyChess\MyChessUI\bin\Debug\net8.0-windows\MyChessUI.dll
+C:\Users\manue\Desktop\MyChess\MyChessUI\bin\Debug\net8.0-windows\MyChessUI.pdb
+C:\Users\manue\Desktop\MyChess\MyChessUI\bin\Debug\net8.0-windows\MyChessLogic.dll
+C:\Users\manue\Desktop\MyChess\MyChessUI\bin\Debug\net8.0-windows\MyChessLogic.pdb
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.csproj.AssemblyReference.cache
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI_MarkupCompile.cache
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI_MarkupCompile.lref
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.g.resources
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.AssemblyInfoInputs.cache
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.AssemblyInfo.cs
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.csproj.CoreCompileInputs.cache
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.csproj.Up2Date
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.dll
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\refint\MyChessUI.dll
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.pdb
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\MyChessUI.genruntimeconfig.cache
+C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\ref\MyChessUI.dll

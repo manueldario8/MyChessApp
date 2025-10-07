@@ -1,0 +1,22 @@
+C:\Users\Manuel Darío\Documents\MyChess\MyChessLogic\bin\Debug\net8.0\MyChessLogic.deps.json
+C:\Users\Manuel Darío\Documents\MyChess\MyChessLogic\bin\Debug\net8.0\MyChessLogic.dll
+C:\Users\Manuel Darío\Documents\MyChess\MyChessLogic\bin\Debug\net8.0\MyChessLogic.pdb
+C:\Users\Manuel Darío\Documents\MyChess\MyChessLogic\obj\Debug\net8.0\MyChessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manuel Darío\Documents\MyChess\MyChessLogic\obj\Debug\net8.0\MyChessLogic.AssemblyInfoInputs.cache
+C:\Users\Manuel Darío\Documents\MyChess\MyChessLogic\obj\Debug\net8.0\MyChessLogic.AssemblyInfo.cs
+C:\Users\Manuel Darío\Documents\MyChess\MyChessLogic\obj\Debug\net8.0\MyChessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Manuel Darío\Documents\MyChess\MyChessLogic\obj\Debug\net8.0\MyChessLogic.dll
+C:\Users\Manuel Darío\Documents\MyChess\MyChessLogic\obj\Debug\net8.0\refint\MyChessLogic.dll
+C:\Users\Manuel Darío\Documents\MyChess\MyChessLogic\obj\Debug\net8.0\MyChessLogic.pdb
+C:\Users\Manuel Darío\Documents\MyChess\MyChessLogic\obj\Debug\net8.0\ref\MyChessLogic.dll
+C:\Users\manue\Desktop\MyChess\MyChessLogic\bin\Debug\net8.0\MyChessLogic.deps.json
+C:\Users\manue\Desktop\MyChess\MyChessLogic\bin\Debug\net8.0\MyChessLogic.dll
+C:\Users\manue\Desktop\MyChess\MyChessLogic\bin\Debug\net8.0\MyChessLogic.pdb
+C:\Users\manue\Desktop\MyChess\MyChessLogic\obj\Debug\net8.0\MyChessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manue\Desktop\MyChess\MyChessLogic\obj\Debug\net8.0\MyChessLogic.AssemblyInfoInputs.cache
+C:\Users\manue\Desktop\MyChess\MyChessLogic\obj\Debug\net8.0\MyChessLogic.AssemblyInfo.cs
+C:\Users\manue\Desktop\MyChess\MyChessLogic\obj\Debug\net8.0\MyChessLogic.csproj.CoreCompileInputs.cache
+C:\Users\manue\Desktop\MyChess\MyChessLogic\obj\Debug\net8.0\MyChessLogic.dll
+C:\Users\manue\Desktop\MyChess\MyChessLogic\obj\Debug\net8.0\refint\MyChessLogic.dll
+C:\Users\manue\Desktop\MyChess\MyChessLogic\obj\Debug\net8.0\MyChessLogic.pdb
+C:\Users\manue\Desktop\MyChess\MyChessLogic\obj\Debug\net8.0\ref\MyChessLogic.dll

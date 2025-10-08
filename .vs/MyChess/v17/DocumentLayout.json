@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\manue\\Desktop\\MyChess\\",
+  "WorkspaceRootPath": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manue\\desktop\\mychess\\mychesslogic\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BBD576A-71D3-4A8F-86CD-069A62E38F82}|MyChessUI\\MyChessUI.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychessui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BBD576A-71D3-4A8F-86CD-069A62E38F82}|MyChessUI\\MyChessUI.csproj|solutionrelative:mychessui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manue\\desktop\\mychess\\mychesslogic\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manue\\desktop\\mychess\\mychesslogic\\endreason.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\endreason.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BBD576A-71D3-4A8F-86CD-069A62E38F82}|MyChessUI\\MyChessUI.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychessui\\promotionmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BBD576A-71D3-4A8F-86CD-069A62E38F82}|MyChessUI\\MyChessUI.csproj|solutionrelative:mychessui\\promotionmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,41 +50,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Result.cs",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Result.cs",
-              "RelativeDocumentMoniker": "MyChessLogic\\Result.cs",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Result.cs",
-              "RelativeToolTip": "MyChessLogic\\Result.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T01:44:36.857Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EndReason.cs",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\EndReason.cs",
-              "RelativeDocumentMoniker": "MyChessLogic\\EndReason.cs",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\EndReason.cs",
-              "RelativeToolTip": "MyChessLogic\\EndReason.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T01:33:56.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GameState.cs",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\GameState.cs",
-              "RelativeDocumentMoniker": "MyChessLogic\\GameState.cs",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\GameState.cs",
-              "RelativeToolTip": "MyChessLogic\\GameState.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAiwDUAAAAJAAAAAAAAAA==",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessUI\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MyChessUI\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessUI\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MyChessUI\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAIQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T01:33:17.749Z",
+              "WhenOpened": "2025-10-08T02:54:49.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PromotionMenu.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessUI\\PromotionMenu.xaml.cs",
+              "RelativeDocumentMoniker": "MyChessUI\\PromotionMenu.xaml.cs",
+              "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessUI\\PromotionMenu.xaml.cs",
+              "RelativeToolTip": "MyChessUI\\PromotionMenu.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T02:41:53.412Z",
               "EditorCaption": ""
             }
           ]

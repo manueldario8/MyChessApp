@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyChessLogic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bd210eb0cf16bbdd64145ddc1563cb17b574be4")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyChessLogic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyChessLogic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

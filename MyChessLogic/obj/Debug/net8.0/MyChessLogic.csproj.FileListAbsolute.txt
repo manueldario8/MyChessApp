@@ -20,3 +20,4 @@ C:\Users\manue\Desktop\MyChess\MyChessLogic\obj\Debug\net8.0\MyChessLogic.dll
 C:\Users\manue\Desktop\MyChess\MyChessLogic\obj\Debug\net8.0\refint\MyChessLogic.dll
 C:\Users\manue\Desktop\MyChess\MyChessLogic\obj\Debug\net8.0\MyChessLogic.pdb
 C:\Users\manue\Desktop\MyChess\MyChessLogic\obj\Debug\net8.0\ref\MyChessLogic.dll
+C:\Users\Manuel Darío\Documents\MyChess\MyChessLogic\obj\Debug\net8.0\MyChessLogic.sourcelink.json

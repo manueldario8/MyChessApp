@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BBD576A-71D3-4A8F-86CD-069A62E38F82}|MyChessUI\\MyChessUI.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychessui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BBD576A-71D3-4A8F-86CD-069A62E38F82}|MyChessUI\\MyChessUI.csproj|solutionrelative:mychessui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychesslogic\\moves\\castle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\moves\\castle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BBD576A-71D3-4A8F-86CD-069A62E38F82}|MyChessUI\\MyChessUI.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychessui\\promotionmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BBD576A-71D3-4A8F-86CD-069A62E38F82}|MyChessUI\\MyChessUI.csproj|solutionrelative:mychessui\\promotionmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychesslogic\\pieces\\king.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\pieces\\king.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,28 +50,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessUI\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MyChessUI\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessUI\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MyChessUI\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAAIQAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "King.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Pieces\\King.cs",
+              "RelativeDocumentMoniker": "MyChessLogic\\Pieces\\King.cs",
+              "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Pieces\\King.cs",
+              "RelativeToolTip": "MyChessLogic\\Pieces\\King.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAuwGIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T02:54:49.171Z",
+              "WhenOpened": "2025-10-08T23:19:55.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PromotionMenu.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessUI\\PromotionMenu.xaml.cs",
-              "RelativeDocumentMoniker": "MyChessUI\\PromotionMenu.xaml.cs",
-              "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessUI\\PromotionMenu.xaml.cs",
-              "RelativeToolTip": "MyChessUI\\PromotionMenu.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Castle.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Moves\\Castle.cs",
+              "RelativeDocumentMoniker": "MyChessLogic\\Moves\\Castle.cs",
+              "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Moves\\Castle.cs",
+              "RelativeToolTip": "MyChessLogic\\Moves\\Castle.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAQwEQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T02:41:53.412Z",
+              "WhenOpened": "2025-10-08T22:58:48.184Z",
               "EditorCaption": ""
             }
           ]

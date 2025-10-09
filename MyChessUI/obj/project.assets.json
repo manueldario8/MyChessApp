@@ -27,23 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Manuel Darío\\.nuget\\packages\\": {},
+    "C:\\Users\\manue\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Manuel Darío\\Documents\\MyChess\\MyChessUI\\MyChessUI.csproj",
+      "projectUniqueName": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessUI\\MyChessUI.csproj",
       "projectName": "MyChessUI",
-      "projectPath": "C:\\Users\\Manuel Darío\\Documents\\MyChess\\MyChessUI\\MyChessUI.csproj",
-      "packagesPath": "C:\\Users\\Manuel Darío\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Manuel Darío\\Documents\\MyChess\\MyChessUI\\obj\\",
+      "projectPath": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessUI\\MyChessUI.csproj",
+      "packagesPath": "C:\\Users\\manue\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Manuel Darío\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\manue\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -58,8 +58,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Manuel Darío\\Documents\\MyChess\\MyChessLogic\\MyChessLogic.csproj": {
-              "projectPath": "C:\\Users\\Manuel Darío\\Documents\\MyChess\\MyChessLogic\\MyChessLogic.csproj"
+            "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\MyChessLogic.csproj": {
+              "projectPath": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\MyChessLogic.csproj"
             }
           }
         }
@@ -98,7 +98,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

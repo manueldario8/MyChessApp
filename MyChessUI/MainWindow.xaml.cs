@@ -215,12 +215,42 @@ namespace MyChessUI
 
         private void RestarGame()
         {
+            selectedPos = null;
             HideHighlights();
             moveCache.Clear();
             gameState = new GameState(Player.White, Board.Initial());
             DrawBoard(gameState.Board);
             SetCursor(gameState.CurrentPlayer);
         }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!IsMenuOnScreen() && e.Key == Key.Escape)
+            {
+                ShowPauseMenu();
+            }
+        }
+
+        private void ShowPauseMenu()
+        {
+            PauseMenu pauseMenu = new();
+            MenuContainer.Content = pauseMenu;
+
+            pauseMenu.OptionSelected += option =>
+            {
+                MenuContainer.Content = null;
+
+                if (option == Option.Restart)
+                {
+                    RestarGame();
+                }
+                else if (option == Option.Exit)
+                {
+                    Application.Current.Shutdown();
+                }
+            };
+        }
+
 
 
     }

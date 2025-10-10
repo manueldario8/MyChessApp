@@ -1,34 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\",
+  "WorkspaceRootPath": "C:\\Users\\manue\\Desktop\\MyChess\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychesslogic\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manue\\desktop\\mychess\\mychesslogic\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychesslogic\\moves\\doublepawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\moves\\doublepawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manue\\desktop\\mychess\\mychesslogic\\statestring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\statestring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychesslogic\\moves\\enpassant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\moves\\enpassant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manue\\desktop\\mychess\\mychesslogic\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychesslogic\\moves\\pawnpromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\moves\\pawnpromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychesslogic\\moves\\castle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\moves\\castle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychesslogic\\moves\\normalmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\moves\\normalmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychesslogic\\moves\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manue\\desktop\\mychess\\mychesslogic\\moves\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\moves\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manue\\desktop\\mychess\\mychesslogic\\moves\\castle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\moves\\castle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -65,94 +57,72 @@
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameState.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\GameState.cs",
-              "RelativeDocumentMoniker": "MyChessLogic\\GameState.cs",
-              "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\GameState.cs",
-              "RelativeToolTip": "MyChessLogic\\GameState.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAuwEgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T01:12:58.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DoublePawn.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Moves\\DoublePawn.cs",
-              "RelativeDocumentMoniker": "MyChessLogic\\Moves\\DoublePawn.cs",
-              "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Moves\\DoublePawn.cs",
-              "RelativeToolTip": "MyChessLogic\\Moves\\DoublePawn.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T01:12:32.59Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "EnPassant.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Moves\\EnPassant.cs",
-              "RelativeDocumentMoniker": "MyChessLogic\\Moves\\EnPassant.cs",
-              "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Moves\\EnPassant.cs",
-              "RelativeToolTip": "MyChessLogic\\Moves\\EnPassant.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
+              "Title": "Board.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Board.cs",
+              "RelativeDocumentMoniker": "MyChessLogic\\Board.cs",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Board.cs",
+              "RelativeToolTip": "MyChessLogic\\Board.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAtwNMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T01:11:24.981Z",
+              "WhenOpened": "2025-10-10T17:35:39.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameState.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\GameState.cs",
+              "RelativeDocumentMoniker": "MyChessLogic\\GameState.cs",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\GameState.cs",
+              "RelativeToolTip": "MyChessLogic\\GameState.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAUwFIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T17:17:04.754Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PawnPromotion.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Moves\\PawnPromotion.cs",
-              "RelativeDocumentMoniker": "MyChessLogic\\Moves\\PawnPromotion.cs",
-              "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Moves\\PawnPromotion.cs",
-              "RelativeToolTip": "MyChessLogic\\Moves\\PawnPromotion.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAADwvyUAAAAYAAAAAAAAAA==",
+              "Title": "Move.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Moves\\Move.cs",
+              "RelativeDocumentMoniker": "MyChessLogic\\Moves\\Move.cs",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Moves\\Move.cs",
+              "RelativeToolTip": "MyChessLogic\\Moves\\Move.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T01:11:07.067Z",
+              "WhenOpened": "2025-10-10T17:16:59.883Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Castle.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Moves\\Castle.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Moves\\Castle.cs",
               "RelativeDocumentMoniker": "MyChessLogic\\Moves\\Castle.cs",
-              "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Moves\\Castle.cs",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Moves\\Castle.cs",
               "RelativeToolTip": "MyChessLogic\\Moves\\Castle.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAIwCwAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T01:10:27.355Z",
+              "WhenOpened": "2025-10-10T17:16:52.147Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "NormalMove.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Moves\\NormalMove.cs",
-              "RelativeDocumentMoniker": "MyChessLogic\\Moves\\NormalMove.cs",
-              "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Moves\\NormalMove.cs",
-              "RelativeToolTip": "MyChessLogic\\Moves\\NormalMove.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA8AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "StateString.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\StateString.cs",
+              "RelativeDocumentMoniker": "MyChessLogic\\StateString.cs",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\StateString.cs",
+              "RelativeToolTip": "MyChessLogic\\StateString.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T01:05:14.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Move.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Moves\\Move.cs",
-              "RelativeDocumentMoniker": "MyChessLogic\\Moves\\Move.cs",
-              "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Moves\\Move.cs",
-              "RelativeToolTip": "MyChessLogic\\Moves\\Move.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T01:04:30.696Z",
+              "WhenOpened": "2025-10-10T16:48:37.87Z",
               "EditorCaption": ""
             }
           ]

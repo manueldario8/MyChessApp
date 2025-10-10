@@ -1,11 +1,26 @@
 ﻿namespace MyChessLogic
 {
-    public class GameState(Player player, Board board)
+    public class GameState()
     {
-        public Board Board { get; set; } = board;
-        public Player CurrentPlayer { get; private set; } = player;
+        public Board Board { get; set; }
+        public Player CurrentPlayer { get; private set; }
         public Result Result { get; private set; } = null;
-        public int noCaptureOrPawnMoves = 0;
+
+        private int noCaptureOrPawnMoves = 0;
+        private string stateString;
+
+        private readonly Dictionary<string, int> stateHistory = new Dictionary<string, int>();
+
+        
+        public GameState(Player player, Board board) :this()
+        {
+            Board = board;
+            CurrentPlayer = player;
+
+            stateString = new StateString(CurrentPlayer, board).ToString();
+            stateHistory[stateString] = 1;
+        }
+
 
         public IEnumerable<Move> LegalMovesForPiece(Position pos)
         {
@@ -28,6 +43,7 @@
             if (captureOrPawnMove) 
             {
                 noCaptureOrPawnMoves = 0;
+                stateHistory.Clear();
             }
             else
             {
@@ -35,6 +51,7 @@
             }
 
                 CurrentPlayer = CurrentPlayer.Opponent();
+            UpdateStateString();
             CheckForGameOver();
         }
 
@@ -71,6 +88,12 @@
             {
                 Result = Result.Draw(EndReason.FiftyMoveRule);  
             }
+
+            else if (ThreeFoldRepetition())
+            {
+                Result = Result.Draw(EndReason.ThreeFoldRepetition);
+            }
+
         }
 
         public bool IsGameOver()
@@ -84,6 +107,27 @@
             int fullMoves = noCaptureOrPawnMoves / 2;
             return fullMoves == 50;
         }
+
+        private void UpdateStateString()
+        {
+            stateString = new StateString(CurrentPlayer, Board).ToString();
+
+            if (!stateHistory.ContainsKey(stateString)) 
+            {
+                stateHistory[stateString]=1;
+            }
+            else
+            {
+                stateHistory[stateString]++;
+            }
+
+        }
+
+        private bool ThreeFoldRepetition()
+        {
+            return stateHistory[stateString] == 3;
+        }
+
 
     }
 }

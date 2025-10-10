@@ -7,12 +7,20 @@
       "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manue\\desktop\\mychess\\mychesslogic\\statestring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\statestring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manue\\desktop\\mychess\\mychesslogic\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manue\\desktop\\mychess\\mychesslogic\\counting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\counting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manue\\desktop\\mychess\\mychesslogic\\moves\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\moves\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manue\\desktop\\mychess\\mychesslogic\\moves\\castle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\moves\\castle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,41 +62,67 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Board.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Board.cs",
+              "RelativeDocumentMoniker": "MyChessLogic\\Board.cs",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Board.cs",
+              "RelativeToolTip": "MyChessLogic\\Board.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAtwNMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T17:35:39.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "GameState.cs",
               "DocumentMoniker": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\GameState.cs",
               "RelativeDocumentMoniker": "MyChessLogic\\GameState.cs",
               "ToolTip": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\GameState.cs",
               "RelativeToolTip": "MyChessLogic\\GameState.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAmwC8AAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAUwFIAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T02:57:56.345Z",
+              "WhenOpened": "2025-10-10T17:17:04.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Move.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Moves\\Move.cs",
+              "RelativeDocumentMoniker": "MyChessLogic\\Moves\\Move.cs",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Moves\\Move.cs",
+              "RelativeToolTip": "MyChessLogic\\Moves\\Move.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T17:16:59.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Castle.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Moves\\Castle.cs",
+              "RelativeDocumentMoniker": "MyChessLogic\\Moves\\Castle.cs",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Moves\\Castle.cs",
+              "RelativeToolTip": "MyChessLogic\\Moves\\Castle.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T17:16:52.147Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Board.cs",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Board.cs",
-              "RelativeDocumentMoniker": "MyChessLogic\\Board.cs",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Board.cs",
-              "RelativeToolTip": "MyChessLogic\\Board.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAAAJ4AAADDAAAAAAAAAA==",
+              "Title": "StateString.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\StateString.cs",
+              "RelativeDocumentMoniker": "MyChessLogic\\StateString.cs",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\StateString.cs",
+              "RelativeToolTip": "MyChessLogic\\StateString.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T02:35:49.408Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Counting.cs",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Counting.cs",
-              "RelativeDocumentMoniker": "MyChessLogic\\Counting.cs",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\MyChess\\MyChessLogic\\Counting.cs",
-              "RelativeToolTip": "MyChessLogic\\Counting.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowCYAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T02:29:41.206Z",
+              "WhenOpened": "2025-10-10T16:48:37.87Z",
               "EditorCaption": ""
             }
           ]

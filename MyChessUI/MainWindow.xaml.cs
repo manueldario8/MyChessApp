@@ -14,23 +14,29 @@ namespace MyChessUI
     {
         private readonly Image[,] pieceImages = new Image[8,8];
         private readonly Rectangle[,] highlights = new Rectangle[8, 8];
-        private readonly Dictionary<Position, Move> moveCache = new Dictionary<Position, Move>();
+        private readonly Dictionary<Position, Move> moveCache = [];
 
-        private GameState gameState;
+        internal GameState gameState;
         private Position selectedPos = null;
 
         public MainWindow()
         {
             InitializeComponent();
             InitializeBoard();
+            StartGameCard startCard = new();
+            MenuContainer.Content = startCard;
+        }
 
-            gameState = new GameState(Player.White, Board.Initial());
+        public void StartGameWithBottomPlayer()
+        {
+            gameState = new GameState(Board.BottomPlayer, Board.Initial());
             DrawBoard(gameState.Board);
             SetCursor(gameState.CurrentPlayer);
         }
-
         private void InitializeBoard()
         {
+
+
             for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++) 
@@ -46,9 +52,7 @@ namespace MyChessUI
                 }
             }
         }
-
-
-        private void DrawBoard(Board board)
+        internal void DrawBoard(Board board)
         {
             for (int i = 0; i < 8; i++)
             {
@@ -79,7 +83,6 @@ namespace MyChessUI
                 OnToPositionSelected(pos);
             }
         }
-
         private Position ToSquarePosition(Point point)
         {
             double squareSize = BoardGrid.ActualWidth / 8;
@@ -87,7 +90,6 @@ namespace MyChessUI
             int column = (int)(point.X / squareSize);
             return new Position(row, column);
         }
-
         private void OnFromPositionSelected(Position pos)
         {
             IEnumerable<Move> moves = gameState.LegalMovesForPiece(pos);
@@ -99,7 +101,6 @@ namespace MyChessUI
                 ShowHighlights();   
             }
         }
-
         private void OnToPositionSelected(Position pos)
         {
             selectedPos = null;
@@ -116,7 +117,6 @@ namespace MyChessUI
                 }
             }
         }
-
         private void HandlePromotion(Position from, Position to)
         {
             pieceImages[to.Row, to.Column].Source = Images.GetImage(gameState.CurrentPlayer, PiecesType.Pawn);
@@ -132,12 +132,12 @@ namespace MyChessUI
                 HandleMove(promMove);
             };
         }    
-
         private void HandleMove(Move move)
         {
             gameState.MakeMove(move);
             DrawBoard(gameState.Board);
             SetCursor(gameState.CurrentPlayer);
+            UpdateCheckHighlight();
 
             if (gameState.IsGameOver())
             {
@@ -145,7 +145,6 @@ namespace MyChessUI
             }
 
         }
-
         public void CacheMoves(IEnumerable<Move> moves)
         {
             moveCache.Clear();
@@ -155,7 +154,6 @@ namespace MyChessUI
                 moveCache[move.ToPos] = move;
             }
         }
-
         public void ShowHighlights()
         {
             Color color = System.Windows.Media.Color.FromArgb(150,125,255,125);
@@ -165,7 +163,6 @@ namespace MyChessUI
                 highlights[to.Row, to.Column].Fill = new SolidColorBrush(color);
             }
         }
-
         private void HideHighlights()
         {
             foreach (Position to in moveCache.Keys)
@@ -173,8 +170,40 @@ namespace MyChessUI
                 highlights[to.Row, to.Column].Fill = Brushes.Transparent;
             }
         }
+        private void ShowCheckHighlight(Position kingPos)
+        {
+            Color red = Color.FromArgb(150, 255, 0, 0);
+            highlights[kingPos.Row, kingPos.Column].Fill = new SolidColorBrush(red);
+        }
+        
+        private void UpdateCheckHighlight()
+        {
+            // Primero limpiar todos los highlights (verdes y rojos)
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    highlights[i, j].Fill = Brushes.Transparent;
+                }
+            }
 
-        private void SetCursor(Player player)
+            // Si el jugador blanco está en jaque, pintar su rey
+            if (gameState.Board.IsInCheck(Player.White))
+            {
+                Position whiteKingPos = gameState.Board.KingPosition(Player.White);
+                ShowCheckHighlight(whiteKingPos);
+            }
+
+            // Si el jugador negro está en jaque, pintar su rey
+            if (gameState.Board.IsInCheck(Player.Black))
+            {
+                Position blackKingPos = gameState.Board.KingPosition(Player.Black);
+                ShowCheckHighlight(blackKingPos);
+            }
+        }
+
+
+        internal void SetCursor(Player player)
         {
             if (player == Player.White) 
             {
@@ -186,13 +215,10 @@ namespace MyChessUI
                 Cursor = ChessCursors.BlackCursor;
             }
         }
-
         private bool IsMenuOnScreen()
         {
             return MenuContainer.Content != null;
         }
-
-
         private void ShowGameOver()
         {
             GameOverMenu gameOverMenu = new(gameState);
@@ -212,17 +238,18 @@ namespace MyChessUI
             };
 
         }
-
+        private void ShowStartGameCard()
+        {
+            StartGameCard startCard = new();
+            MenuContainer.Content = startCard;
+        }
         private void RestarGame()
         {
             selectedPos = null;
             HideHighlights();
             moveCache.Clear();
-            gameState = new GameState(Player.White, Board.Initial());
-            DrawBoard(gameState.Board);
-            SetCursor(gameState.CurrentPlayer);
+            ShowStartGameCard();
         }
-
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             if (!IsMenuOnScreen() && e.Key == Key.Escape)
@@ -230,7 +257,6 @@ namespace MyChessUI
                 ShowPauseMenu();
             }
         }
-
         private void ShowPauseMenu()
         {
             PauseMenu pauseMenu = new();

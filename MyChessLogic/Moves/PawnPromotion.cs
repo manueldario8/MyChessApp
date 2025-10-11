@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MyChessLogic
+﻿namespace MyChessLogic
 {
     public class PawnPromotion(Position from, Position to, PiecesType newType) : Move
     {

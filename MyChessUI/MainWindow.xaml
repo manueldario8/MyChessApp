@@ -11,19 +11,22 @@
         Background="#101010"
         KeyDown="Window_KeyDown">
     <Viewbox>
-        
         <Grid x:Name="BoardGrid" Width="630" Height="630"
               MouseDown="BoardGrid_MouseDown">
-            
+
+            <!-- Fondo del tablero -->
             <Grid.Background>
-                <ImageBrush ImageSource="/Assets/Board.png"></ImageBrush>
+                <ImageBrush ImageSource="/Assets/Board.png"/>
             </Grid.Background>
-            <UniformGrid x:Name="HighLightGrid" Rows="8" Columns="8"></UniformGrid>
-            
-            <UniformGrid x:Name="PieceGrid" Rows="8" Columns="8" RenderOptions.BitmapScalingMode="HighQuality">
-            </UniformGrid>
+
+            <!-- Resaltado de casillas -->
+            <UniformGrid x:Name="HighLightGrid" Rows="8" Columns="8"/>
+
+            <!-- Piezas -->
+            <UniformGrid x:Name="PieceGrid" Rows="8" Columns="8" RenderOptions.BitmapScalingMode="HighQuality"/>
+
+            <!-- Contenedor para el menú / tarjeta -->
             <ContentControl x:Name="MenuContainer"/>
         </Grid>
     </Viewbox>
-    
 </Window>

@@ -7,26 +7,25 @@
         public Result Result { get; private set; } = null;
 
         private int noCaptureOrPawnMoves = 0;
+
         private string stateString;
 
-        private readonly Dictionary<string, int> stateHistory = new Dictionary<string, int>();
+        private readonly Dictionary<string, int> stateHistory = [];
 
-        
-        public GameState(Player player, Board board) :this()
+
+        public GameState(Player bottomPlayer, Board board) : this()
         {
             Board = board;
-            CurrentPlayer = player;
-
+            CurrentPlayer = Player.White; //
             stateString = new StateString(CurrentPlayer, board).ToString();
             stateHistory[stateString] = 1;
         }
-
 
         public IEnumerable<Move> LegalMovesForPiece(Position pos)
         {
             if (Board.IsEmpty(pos)|| Board[pos].Color != CurrentPlayer)
             {
-                return Enumerable.Empty<Move>();
+                return [];
             }
         
             Piece piece = Board[pos];
@@ -34,7 +33,6 @@
             return moveCandidates.Where(move => move.IsLegal(Board));
         
         }
-
         public void MakeMove(Move move) 
         {
             Board.SetPawnSkipPosition(CurrentPlayer, null);
@@ -54,7 +52,6 @@
             UpdateStateString();
             CheckForGameOver();
         }
-
         public IEnumerable<Move> AllLegalMovesFor(Player player)
         {
             IEnumerable<Move> moveCandidates = Board.PiecePositionsFor(player).SelectMany(pos =>
@@ -65,8 +62,6 @@
 
             return moveCandidates.Where(move => move.IsLegal(Board));
         }
-
-
         private void CheckForGameOver()
         {
             if (!AllLegalMovesFor(CurrentPlayer).Any())
@@ -95,19 +90,15 @@
             }
 
         }
-
         public bool IsGameOver()
         {
             return Result != null;
         }
-
-
         private bool FiftyMoveRule()
         {
             int fullMoves = noCaptureOrPawnMoves / 2;
             return fullMoves == 50;
         }
-
         private void UpdateStateString()
         {
             stateString = new StateString(CurrentPlayer, Board).ToString();
@@ -122,7 +113,6 @@
             }
 
         }
-
         private bool ThreeFoldRepetition()
         {
             return stateHistory[stateString] == 3;

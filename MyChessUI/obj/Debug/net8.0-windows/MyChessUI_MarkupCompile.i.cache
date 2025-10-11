@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\manue\Desktop\MyChess\MyChessUI\obj\Debug\net8.0-windows\
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\obj\Debug\net8.0-windows\
 MyChessUI
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\manue\Desktop\MyChess\MyChessUI\App.xaml
-4-1284736647
+C:\Users\Manuel Darío\Documents\MyChess\MyChessUI\App.xaml
+5435328527
 
-12-1927587737
-199-1190911498
-GameOverMenu.xaml;MainWindow.xaml;PauseMenu.xaml;PromotionMenu.xaml;
+13-503054710
+199-81281178
+GameOverMenu.xaml;MainWindow.xaml;PauseMenu.xaml;PromotionMenu.xaml;StartGameCard.xaml;
 
 False
 

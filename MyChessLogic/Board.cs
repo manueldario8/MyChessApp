@@ -1,4 +1,5 @@
 ﻿using MyChessLogic.Moves;
+using MyChessLogic;
 
 namespace MyChessLogic
 {
@@ -6,22 +7,13 @@ namespace MyChessLogic
     {
         private readonly Piece[,] pieces = new Piece[8, 8];
 
+        public static Player BottomPlayer { get; set; }
+
         private readonly Dictionary<Player, Position> pawnSkipPositions = new()
         { 
             {Player.White, null },
             {Player.Black, null }
         };
-
-        public Position GetPawnSkipPosition(Player player)
-        {
-            return pawnSkipPositions[player];
-        }
-
-        public void SetPawnSkipPosition(Player player, Position pos)
-        {
-            pawnSkipPositions[player] = pos;
-        }
-
 
         public Piece this[int row, int col]
         {
@@ -36,14 +28,26 @@ namespace MyChessLogic
 
         }
 
-        public static Board Initial()
+        
+
+        public static Board Initial(Player? chosenPlayer = null)
+        {
+            Player playerToUse = chosenPlayer ?? BottomPlayer;
+
+            return ChoosePlayer(playerToUse);
+
+        }   
+        public static Board ChoosePlayer(Player chosenPlayer)
         {
             Board board = new();
-            board.AddStartPieces();
+
+            if (chosenPlayer == Player.White)
+                board.AddStartPieces();       
+            else
+                board.AddStartBlackPieces(); 
+
             return board;
-
         }
-
         public void AddStartPieces()
         {
             this[0, 0] = new Rook(Player.Black);
@@ -70,19 +74,50 @@ namespace MyChessLogic
                 this[1, i] = new Pawn(Player.Black);
                 this[6, i] = new Pawn(Player.White);
             }
-
         }
+        public void AddStartBlackPieces()
+        {
+            this[0, 0] = new Rook(Player.White);
+            this[0, 1] = new Knight(Player.White);
+            this[0, 2] = new Bishop(Player.White);
+            this[0, 3] = new Queen(Player.White);
+            this[0, 4] = new King(Player.White);
+            this[0, 5] = new Bishop(Player.White);
+            this[0, 6] = new Knight(Player.White);
+            this[0, 7] = new Rook(Player.White);
 
+
+            this[7, 0] = new Rook(Player.Black);
+            this[7, 1] = new Knight(Player.Black);
+            this[7, 2] = new Bishop(Player.Black);
+            this[7, 3] = new Queen(Player.Black);
+            this[7, 4] = new King(Player.Black);
+            this[7, 5] = new Bishop(Player.Black);
+            this[7, 6] = new Knight(Player.Black);
+            this[7, 7] = new Rook(Player.Black);
+
+            /**/for (int i = 0; i <= 7; i++)
+            {
+                this[1, i] = new Pawn(Player.White);
+                this[6, i] = new Pawn(Player.Black);
+            }
+        }
+        public Position GetPawnSkipPosition(Player player)
+        {
+            return pawnSkipPositions[player];
+        }
+        public void SetPawnSkipPosition(Player player, Position pos)
+        {
+            pawnSkipPositions[player] = pos;
+        }
         public static bool IsInside(Position pos)
         {
             return pos.Row >= 0 && pos.Row < 8 && pos.Column >= 0 && pos.Column < 8;
         }
-
         public bool IsEmpty(Position pos)
         {
             return this[pos] == null;
         }
-
         public IEnumerable<Position> PiecePositions()
         {
             for (int r = 0; r < 8; r++)
@@ -98,18 +133,11 @@ namespace MyChessLogic
                 }
             }
         }
-
         public IEnumerable<Position> PiecePositionsFor(Player player)
         {
             return PiecePositions().Where(pos => this[pos].Color == player);
 
         }
-
-        //public Position FindKing(Player player)
-        //{
-        //    return PiecePositionsFor(player).First(pos => this[pos].Type == PiecesType.King);
-        //}
-
         public bool IsInCheck(Player player)
         {
             return PiecePositionsFor(player.Opponent()).Any(pos =>
@@ -118,17 +146,11 @@ namespace MyChessLogic
                 return piece.CanCaptureOpponentKing(pos, this);
             });
         }
-        //public bool IsInCheck(Player player)
-        //{
-        //    Position kingPos = FindKing(player);
-        //    return PiecePositionsFor(player.Opponent()).Any(pos =>
-        //    {
-        //        Piece piece = this[pos];
-        //        return piece.GetMoves(pos, this).Any(move => move.ToPos.Equals(kingPos));
-        //    });
-        //}
-
-
+        public Position KingPosition(Player player)
+        {
+            return PiecePositionsFor(player)
+                .First(pos => this[pos] is King);
+        }
         public Board Copy()
         {
             Board copy = new();
@@ -140,7 +162,6 @@ namespace MyChessLogic
 
             return copy;
         }
-
         public Counting CountPieces()
         {
             Counting counting = new();
@@ -153,24 +174,20 @@ namespace MyChessLogic
 
             return counting;
         }
-
         public bool InsufficientMaterial()
         {
             Counting counting = CountPieces();
 
             return IsKingVsKing(counting) || IsKingAndBishopVsKing(counting) || IsKingAndBishopVsKingAndBishop(counting) || IsKingAndKnightVsKing(counting) || IsKingAndTwoKnightsVsKing(counting);
         }
-
         private static bool IsKingVsKing(Counting counting)
         {
             return counting.totalCount == 2;
         }
-
         private static bool IsKingAndBishopVsKing(Counting counting)
         {
             return counting.totalCount == 3 && (counting.White(PiecesType.Bishop) == 1 || counting.Black(PiecesType.Bishop) == 1);
         }
-
         private bool IsKingAndBishopVsKingAndBishop(Counting counting)
         {
             if (counting.totalCount !=4) return false;
@@ -182,22 +199,18 @@ namespace MyChessLogic
             return wBishopPos.SquareColor() == bBishopPos.SquareColor();
 
         }
-
         private Position FindPiece(Player color, PiecesType type)
         {
             return PiecePositionsFor(color).First(pos => this[pos].Type == type);
         }
-
         private static bool IsKingAndKnightVsKing(Counting counting)
         {
             return counting.totalCount == 3 && (counting.White(PiecesType.Knight) == 1 || counting.Black(PiecesType.Knight) == 1);
         }
-
         private static bool IsKingAndTwoKnightsVsKing(Counting counting)
         {
             return counting.totalCount == 4 && (counting.White(PiecesType.Knight) == 2 || counting.Black(PiecesType.Knight) == 2);
         }
-
         private bool IsUnmovedKingAndRook(Position kingPos, Position rookPos)
         {
             if (IsEmpty(kingPos) || IsEmpty(rookPos)) return false;
@@ -208,7 +221,6 @@ namespace MyChessLogic
             return king.Type == PiecesType.King && rook.Type == PiecesType.Rook && !king.HasMoved && !rook.HasMoved;
 
         }
-
         internal bool IsCastleRightKS(Player player)
         {
             return player switch
@@ -218,7 +230,6 @@ namespace MyChessLogic
                 _ => false
             };
         }
-
         internal bool IsCastleRightQS(Player player)
         {
             return player switch
@@ -228,7 +239,26 @@ namespace MyChessLogic
                 _ => false
             };
         }
-
+        //NEW SIDE METHODS
+        internal bool IsCastleRightKSBlack(Player player)
+        {
+            return player switch
+            {
+                Player.White => IsUnmovedKingAndRook(new Position(0, 4), new Position(0, 7)),
+                Player.Black => IsUnmovedKingAndRook(new Position(7, 4), new Position(7, 7)),
+                _ => false
+            };
+        }
+        internal bool IsCastleRightQSBlack(Player player)
+        {
+            return player switch
+            {
+                Player.White => IsUnmovedKingAndRook(new Position(0, 4), new Position(0, 0)),
+                Player.Black => IsUnmovedKingAndRook(new Position(7, 4), new Position(7, 0)),
+                _ => false
+            };
+        }
+        //END
         private bool HasPawnInPosition(Player player, Position[] pawnPositions, Position skipPos)
         {
             foreach (Position pos in pawnPositions.Where(IsInside))
@@ -246,7 +276,6 @@ namespace MyChessLogic
 
             return false;
         }
-
         public bool CanCaptureEnPassant(Player player)
         {
             Position skipPos = GetPawnSkipPosition(player.Opponent());
@@ -262,6 +291,22 @@ namespace MyChessLogic
 
             return HasPawnInPosition(player, pawnPositions, skipPos);
         }
+        //NEW EN PASSANT BLACK METHOD
+        public bool CanCaptureEnPassantBlack(Player player)
+        {
+            Position skipPos = GetPawnSkipPosition(player.Opponent());
 
+            if (skipPos == null) return false;
+
+            Position[] pawnPositions = player switch
+            {
+                Player.White => new Position[] { skipPos + Direction.NorthWest, skipPos + Direction.NorthEast },
+                Player.Black => new Position[] { skipPos + Direction.SouthWest, skipPos + Direction.SouthEast },
+                _ => Array.Empty<Position>()
+            };
+
+            return HasPawnInPosition(player, pawnPositions, skipPos);
+        }
+        //END
     }
 }

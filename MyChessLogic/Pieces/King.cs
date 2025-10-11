@@ -12,7 +12,7 @@ public class King(Player color) : Piece
             Direction.East,
             Direction.West,
             Direction.NorthEast,
-            Direction.SouthEast,
+            Direction.NorthWest,
             Direction.SouthEast,
             Direction.SouthWest
     ];

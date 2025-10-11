@@ -13,13 +13,13 @@ namespace MyChessLogic
         {
             Color = color;
 
-        if (color == Player.White)
+            if (Board.BottomPlayer == Player.Black)
             {
-            forward = Direction.North;
+                forward = (color == Player.White) ? Direction.South : Direction.North;
             }
-        else if (color == Player.Black)
+            else
             {
-                forward = Direction.South;
+                forward = (color == Player.White) ? Direction.North : Direction.South;
             }
         }
         public override Piece Copy()
@@ -30,6 +30,8 @@ namespace MyChessLogic
             };
             return copy;
         }
+        //NEW BLACK METHOD
+        //END
 
         private static bool CanMoveTo(Position pos, Board board) 
         {

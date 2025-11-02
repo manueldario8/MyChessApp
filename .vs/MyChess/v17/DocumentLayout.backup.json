@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BBD576A-71D3-4A8F-86CD-069A62E38F82}|MyChessUI\\MyChessUI.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychessui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BBD576A-71D3-4A8F-86CD-069A62E38F82}|MyChessUI\\MyChessUI.csproj|solutionrelative:mychessui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BBD576A-71D3-4A8F-86CD-069A62E38F82}|MyChessUI\\MyChessUI.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychessui\\startgamecard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BBD576A-71D3-4A8F-86CD-069A62E38F82}|MyChessUI\\MyChessUI.csproj|solutionrelative:mychessui\\startgamecard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychesslogic\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E0CDD77-8E6F-4526-B5D9-690A48D2048E}|MyChessLogic\\MyChessLogic.csproj|solutionrelative:mychesslogic\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BBD576A-71D3-4A8F-86CD-069A62E38F82}|MyChessUI\\MyChessUI.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychessui\\startgamecard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7BBD576A-71D3-4A8F-86CD-069A62E38F82}|MyChessUI\\MyChessUI.csproj|solutionrelative:mychessui\\startgamecard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BBD576A-71D3-4A8F-86CD-069A62E38F82}|MyChessUI\\MyChessUI.csproj|c:\\users\\manuel dar\u00EDo\\documents\\mychess\\mychessui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BBD576A-71D3-4A8F-86CD-069A62E38F82}|MyChessUI\\MyChessUI.csproj|solutionrelative:mychessui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,28 +54,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Board.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Board.cs",
-              "RelativeDocumentMoniker": "MyChessLogic\\Board.cs",
-              "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessLogic\\Board.cs",
-              "RelativeToolTip": "MyChessLogic\\Board.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAiwJgAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "StartGameCard.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessUI\\StartGameCard.xaml.cs",
+              "RelativeDocumentMoniker": "MyChessUI\\StartGameCard.xaml.cs",
+              "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessUI\\StartGameCard.xaml.cs",
+              "RelativeToolTip": "MyChessUI\\StartGameCard.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAjwCMAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T02:20:38.47Z",
+              "WhenOpened": "2025-11-02T16:49:46.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessUI\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MyChessUI\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessUI\\MainWindow.xaml.cs",
               "RelativeToolTip": "MyChessUI\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAqwLEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T02:18:37.07Z",
+              "WhenOpened": "2025-11-02T18:03:22.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StartGameCard.xaml",
+              "DocumentMoniker": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessUI\\StartGameCard.xaml",
+              "RelativeDocumentMoniker": "MyChessUI\\StartGameCard.xaml",
+              "ToolTip": "C:\\Users\\Manuel Dar\u00EDo\\Documents\\MyChess\\MyChessUI\\StartGameCard.xaml",
+              "RelativeToolTip": "MyChessUI\\StartGameCard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-02T16:41:25.1Z",
               "EditorCaption": ""
             }
           ]

@@ -7,60 +7,41 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
-    <Border Width="350" Height="250" Style="{StaticResource BorderStyle}">
-        <Grid RenderOptions.BitmapScalingMode="HighQuality">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="0.7*">
+    <Border Width="255" Height="280" Style="{StaticResource BorderStyle}">
+        <Grid>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="226" Height="252">
 
-                </RowDefinition>
+                <GroupBox Header="GAME MODE" Style="{StaticResource GroupBoxStyle}" Margin="0,0,0,15" Width="170">
+                    <StackPanel>
+                        <RadioButton x:Name="rbHuman" Content="1 VS 1" IsChecked="True" 
+                                     Style="{StaticResource RadioButtonStyle}"
+                                     Checked="RbHuman_Checked"/>
+                        <RadioButton x:Name="rbComputer" Content="1 VS COMPUTER" 
+                                     Style="{StaticResource RadioButtonStyle}"
+                                     Checked="RbComputer_Checked"/>
+                    </StackPanel>
+                </GroupBox>
 
-                <RowDefinition Height="1.5*">
+                <GroupBox Header="CHOOSE SIDE" Style="{StaticResource GroupBoxStyle}" Width="170">
+                    <StackPanel>
+                        <RadioButton x:Name="rbWhite" Content="WHITE" IsChecked="True" 
+                                     Style="{StaticResource RadioButtonStyle}" 
+                                     Checked="WhitePlayer_Checked"/>
+                        <RadioButton x:Name="rbBlack" Content="BLACK" 
+                                     Style="{StaticResource RadioButtonStyle}" 
+                                     Checked="BlackPlayer_Checked"/>
+                    </StackPanel>
+                </GroupBox>
 
-                </RowDefinition>
-            </Grid.RowDefinitions>
+                <GroupBox Header="SELECT LEVEL" Style="{StaticResource GroupBoxStyle}" Margin="0,0,0,10" Width="170">
+                    <ComboBox x:Name="cbDifficulty" Width="150" SelectedIndex="0"/>
+                </GroupBox>
 
-            <TextBlock Text="SELECT SIDE" Style="{StaticResource TextStyle}" FontSize="28"/>
+                <Button Content="START GAME" Width="150" Height="40" 
+                        Style="{StaticResource ButtonStyle}" 
+                        Click="StartGame_Click"/>
 
-            <UniformGrid Grid.Row="1" Rows="1" Columns="2" Cursor="Hand">
-                
-                <Border BorderBrush="Gray" BorderThickness="3" CornerRadius="4" Padding="3" Margin="7">
-                    
-                    <Border.Style>
-                        <Style TargetType="Border">
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="RenderTransform">
-                                        <Setter.Value>
-                                            <ScaleTransform ScaleX="1.03" ScaleY="1.03"/>
-                                        </Setter.Value>
-                                    </Setter>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Border.Style>
-                    <Image x:Name="QueenWImg" MouseDown="WhiteSide_MouseDown" Source="/Assets/QueenW.png"/>
-                </Border>
-                <!--Black side-->
-                
-                <Border BorderBrush="Gray" BorderThickness="3" CornerRadius="4" Padding="3" Margin="7">
-                    <Border.Style>
-                        <Style TargetType="Border">
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="RenderTransform">
-                                        <Setter.Value>
-                                            <ScaleTransform ScaleX="1.03" ScaleY="1.03"/>
-                                        </Setter.Value>
-                                    </Setter>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Border.Style>
-                    <Image x:Name="QueenBImg" MouseDown="BlackSide_MouseDown" Source="/Assets/QueenB.png"/>
-                </Border>
-
-
-            </UniformGrid>
+            </StackPanel>
         </Grid>
     </Border>
 </UserControl>

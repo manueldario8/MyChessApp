@@ -16,6 +16,12 @@ namespace MyChessUI
         private readonly Rectangle[,] highlights = new Rectangle[8, 8];
         private readonly Dictionary<Position, Move> moveCache = [];
 
+        
+        private bool vsComputer = true;
+        private Player computerPlayer;
+        private readonly Random random = new();
+
+
         internal GameState gameState;
         private Position selectedPos = null;
 
@@ -27,11 +33,27 @@ namespace MyChessUI
             MenuContainer.Content = startCard;
         }
 
+        public void SetVsComputer(bool isComputer)
+        {
+            vsComputer = isComputer;
+        }
+
+
         public void StartGameWithBottomPlayer()
         {
             gameState = new GameState(Board.BottomPlayer, Board.Initial());
+            computerPlayer = (Board.BottomPlayer == Player.White)
+                ? Player.Black
+                : Player.White;
+
+
             DrawBoard(gameState.Board);
             SetCursor(gameState.CurrentPlayer);
+
+            if (vsComputer && gameState.CurrentPlayer == computerPlayer)
+            {
+                MakeComputerMove();
+            }
         }
         private void InitializeBoard()
         {
@@ -133,8 +155,11 @@ namespace MyChessUI
             };
         }    
         private void HandleMove(Move move)
-        {
+        { 
+
             gameState.MakeMove(move);
+
+            ClearHighlights();
             DrawBoard(gameState.Board);
             SetCursor(gameState.CurrentPlayer);
             UpdateCheckHighlight();
@@ -144,6 +169,24 @@ namespace MyChessUI
                 ShowGameOver();
             }
 
+            if (vsComputer && gameState.CurrentPlayer == computerPlayer && !gameState.IsGameOver())
+            {
+                MakeComputerMove();
+            }
+
+        }
+        private async void MakeComputerMove()
+        {
+            await Task.Delay(700);
+            IEnumerable<Move> moves = gameState.AllLegalMovesFor(computerPlayer);
+
+            if (!moves.Any())
+                return;
+
+            Move move = moves.ElementAt(random.Next(moves.Count()));
+            
+
+            HandleMove(move);
         }
         public void CacheMoves(IEnumerable<Move> moves)
         {
@@ -174,11 +217,10 @@ namespace MyChessUI
         {
             Color red = Color.FromArgb(150, 255, 0, 0);
             highlights[kingPos.Row, kingPos.Column].Fill = new SolidColorBrush(red);
-        }
-        
+        }   
         private void UpdateCheckHighlight()
         {
-            // Primero limpiar todos los highlights (verdes y rojos)
+            
             for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)
@@ -186,23 +228,28 @@ namespace MyChessUI
                     highlights[i, j].Fill = Brushes.Transparent;
                 }
             }
-
-            // Si el jugador blanco está en jaque, pintar su rey
             if (gameState.Board.IsInCheck(Player.White))
             {
                 Position whiteKingPos = gameState.Board.KingPosition(Player.White);
                 ShowCheckHighlight(whiteKingPos);
             }
-
-            // Si el jugador negro está en jaque, pintar su rey
             if (gameState.Board.IsInCheck(Player.Black))
             {
                 Position blackKingPos = gameState.Board.KingPosition(Player.Black);
                 ShowCheckHighlight(blackKingPos);
             }
         }
+        private void ClearHighlights()
+        {
 
-
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    highlights[i, j].Fill = Brushes.Transparent;
+                }
+            }
+        }
         internal void SetCursor(Player player)
         {
             if (player == Player.White) 
@@ -245,8 +292,8 @@ namespace MyChessUI
         }
         private void RestarGame()
         {
+            ClearHighlights();
             selectedPos = null;
-            HideHighlights();
             moveCache.Clear();
             ShowStartGameCard();
         }
